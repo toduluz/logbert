@@ -27,7 +27,7 @@ options["window_size"] = 128
 options["adaptive_window"] = True
 options["seq_len"] = 512
 options["max_len"] = 512 # for position embedding
-options["min_len"] = 10
+options["min_len"] = 50
 
 options["mask_ratio"] = 0.5
 
@@ -50,7 +50,7 @@ options["hidden"] = 256 # embedding size
 options["layers"] = 4
 options["attn_heads"] = 4
 
-options["epochs"] = 200
+options["epochs"] = 50
 options["n_epochs_stop"] = 10
 options["batch_size"] = 32
 

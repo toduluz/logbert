@@ -119,7 +119,7 @@ class LogDataset(Dataset):
             bert_input.extend(padding), bert_label.extend(padding), time_input.extend(padding), time_label.extend(
                 padding)
 
-            time_input = np.array(time_input)[:, np.newaxis]
+            time_input = np.array(time_input)[:, np.newaxis].tolist()
             output["bert_input"].append(bert_input)
             output["bert_label"].append(bert_label)
             output["time_input"].append(time_input)
